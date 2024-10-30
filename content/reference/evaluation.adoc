@@ -56,7 +56,7 @@ An empty list `()` evaluates to an empty list.
 
 Non-empty Lists are considered _calls_ to either special forms, macros, or functions. A call has the form +(operator operands*)+.
 
-Special forms are primitives built-in to Clojure that perform core operations. If the operator of a call is a symbol that resolves to the name of a special form, the call is to that special form. Each form discussed individually under <<special_forms#,Special Forms>>.
+Special forms are primitives built-in to Clojure that perform core operations. If the operator of a call is a symbol that resolves to the name of a special form, the call is to that special form. Each special form is discussed individually under <<special_forms#,Special Forms>>.
 
 <<macros#,Macros>> are functions that manipulate forms, allowing for syntactic abstraction. If the operator of a call is a symbol that names a global var that is a macro function, that macro function is called and is passed the _unevaluated_ operand forms. The return value of the macro is then evaluated in its place.
 
